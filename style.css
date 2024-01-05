@@ -1,26 +1,45 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 .container {
     background-color: rgb(197, 80, 80);
     display: grid; 
-    grid-template-columns: 1fr 5fr;   
+    grid-template-columns: minmax(250px, 1fr) 5fr;   
     grid-template-rows: 1fr 5fr;   
 }
 
 .sidebar {
     background-color: rgb(82, 101, 186);
     color: white;
+    padding:20px ;
     grid-column: 1/2;
     grid-row: 1/3;
     display: grid;
     grid-template-columns: 1fr;
 }
 
+.sidebar-main {
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+
+.sidebar .icon {
+    height: 40px;
+    width: 40px;
+    align-self: center;
+    filter: invert(100%);
+}
+
 .sidebar-title {
-    font-size: 20px;
+    font-size: 25px
+}
+
+.sidebar ul {
+    list-style-type: none;
 }
 
 .header {
