@@ -14,32 +14,54 @@
 .sidebar {
     background-color: rgb(82, 101, 186);
     color: white;
-    padding:20px ;
-    grid-column: 1/2;
     grid-row: 1/3;
     display: grid;
     grid-template-columns: 1fr;
-}
-
-.sidebar-main {
-    display: flex;
-    align-items: center;
-    height: 50px;
-}
-
-.sidebar .icon {
-    height: 40px;
-    width: 40px;
-    align-self: center;
-    filter: invert(100%);
+    grid-template-rows: 1fr;
+    grid-template-rows: 80px 50px 250px 50px 100px 1fr;
+    padding-left: 20px;
+    box-shadow: 5px 5px 20px black;
 }
 
 .sidebar-title {
-    font-size: 25px
+    grid-row: 1/2;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    font-size: 23px;
+    gap: 10px;
 }
 
-.sidebar ul {
-    list-style-type: none;
+.icon.main {
+    filter: invert(100%);
+    width: 40px;
+}
+
+.dashboard-menu {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.icon {
+    filter: invert(100%);
+    width: 25px;
+}
+
+.account {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    grid-row: 3/4;
+    /* border: 1px solid black; */
+}
+
+.settings {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    grid-row: 5/6;
+    /* border: 1px solid black; */
 }
 
 .header {
